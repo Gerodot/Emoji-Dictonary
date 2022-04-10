@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		2DB519BF280378E900667D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519BE280378E900667D77 /* AppDelegate.swift */; };
 		2DB519C1280378E900667D77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519C0280378E900667D77 /* SceneDelegate.swift */; };
-		2DB519C3280378E900667D77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519C2280378E900667D77 /* ViewController.swift */; };
 		2DB519C6280378E900667D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C4280378E900667D77 /* Main.storyboard */; };
 		2DB519C8280378EE00667D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C7280378EE00667D77 /* Assets.xcassets */; };
 		2DB519CB280378EE00667D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C9280378EE00667D77 /* LaunchScreen.storyboard */; };
 		2DB519D428037A2A00667D77 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519D328037A2A00667D77 /* Emoji.swift */; };
+		2DB519D92803802600667D77 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519D82803802600667D77 /* EmojiTableViewController.swift */; };
+		2DB519DB2803804A00667D77 /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519DA2803804A00667D77 /* AddEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DB519BB280378E900667D77 /* TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB519BE280378E900667D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DB519C0280378E900667D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2DB519C2280378E900667D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DB519C5280378E900667D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DB519C7280378EE00667D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DB519CA280378EE00667D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DB519CC280378EE00667D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DB519D328037A2A00667D77 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		2DB519D82803802600667D77 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		2DB519DA2803804A00667D77 /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,10 @@
 		2DB519BD280378E900667D77 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
+				2DB519D728037E7400667D77 /* App */,
 				2DB519D228037A1000667D77 /* Model */,
-				2DB519BE280378E900667D77 /* AppDelegate.swift */,
-				2DB519C0280378E900667D77 /* SceneDelegate.swift */,
-				2DB519C2280378E900667D77 /* ViewController.swift */,
-				2DB519C4280378E900667D77 /* Main.storyboard */,
-				2DB519C7280378EE00667D77 /* Assets.xcassets */,
-				2DB519C9280378EE00667D77 /* LaunchScreen.storyboard */,
-				2DB519CC280378EE00667D77 /* Info.plist */,
+				2DB519D528037E2800667D77 /* ViewControllers */,
+				2DB519D628037E3D00667D77 /* Views */,
 			);
 			path = TableViews;
 			sourceTree = "<group>";
@@ -76,6 +74,35 @@
 				2DB519D328037A2A00667D77 /* Emoji.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2DB519D528037E2800667D77 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DB519D82803802600667D77 /* EmojiTableViewController.swift */,
+				2DB519DA2803804A00667D77 /* AddEditTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DB519D628037E3D00667D77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DB519C4280378E900667D77 /* Main.storyboard */,
+				2DB519C9280378EE00667D77 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DB519D728037E7400667D77 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2DB519BE280378E900667D77 /* AppDelegate.swift */,
+				2DB519C0280378E900667D77 /* SceneDelegate.swift */,
+				2DB519C7280378EE00667D77 /* Assets.xcassets */,
+				2DB519CC280378EE00667D77 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB519C3280378E900667D77 /* ViewController.swift in Sources */,
+				2DB519D92803802600667D77 /* EmojiTableViewController.swift in Sources */,
 				2DB519BF280378E900667D77 /* AppDelegate.swift in Sources */,
 				2DB519D428037A2A00667D77 /* Emoji.swift in Sources */,
 				2DB519C1280378E900667D77 /* SceneDelegate.swift in Sources */,
+				2DB519DB2803804A00667D77 /* AddEditTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCNPSXVE8H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TableViews/Info.plist;
+				INFOPLIST_FILE = TableViews/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCNPSXVE8H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TableViews/Info.plist;
+				INFOPLIST_FILE = TableViews/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
