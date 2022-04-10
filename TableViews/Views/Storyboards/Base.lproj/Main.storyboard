@@ -10,18 +10,50 @@
         <!--Emoji-->
         <scene sceneID="iBX-eN-8th">
             <objects>
-                <tableViewController id="09o-w1-anP" sceneMemberID="viewController">
+                <tableViewController id="09o-w1-anP" customClass="EmojiTableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1bU-Th-FSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cQn-cj-Dba">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EmojiCell" rowHeight="88" id="cQn-cj-Dba">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQn-cj-Dba" id="KGc-wa-w2I">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kne-oS-4v5">
+                                            <rect key="frame" x="20" y="11" width="35" height="66"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-D7-IPt">
+                                            <rect key="frame" x="75" y="11" width="302.5" height="37.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGX-dn-3L2">
+                                            <rect key="frame" x="75" y="56.5" width="302.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kne-oS-4v5" firstAttribute="leading" secondItem="KGc-wa-w2I" secondAttribute="leadingMargin" id="2GY-hg-zSK"/>
+                                        <constraint firstItem="YGX-dn-3L2" firstAttribute="top" secondItem="PbR-D7-IPt" secondAttribute="bottom" constant="8" id="Azb-xo-APx"/>
+                                        <constraint firstItem="YGX-dn-3L2" firstAttribute="bottom" secondItem="KGc-wa-w2I" secondAttribute="bottomMargin" id="IIQ-zy-8oi"/>
+                                        <constraint firstItem="PbR-D7-IPt" firstAttribute="top" secondItem="KGc-wa-w2I" secondAttribute="topMargin" id="JCe-TO-JhQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Kne-oS-4v5" secondAttribute="bottom" id="LpM-vP-frR"/>
+                                        <constraint firstItem="YGX-dn-3L2" firstAttribute="leading" secondItem="Kne-oS-4v5" secondAttribute="trailing" constant="20" id="fBX-tR-80B"/>
+                                        <constraint firstItem="PbR-D7-IPt" firstAttribute="leading" secondItem="Kne-oS-4v5" secondAttribute="trailing" constant="20" id="qXO-Hq-xxN"/>
+                                        <constraint firstItem="Kne-oS-4v5" firstAttribute="top" secondItem="KGc-wa-w2I" secondAttribute="topMargin" id="vP6-hq-nyn"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YGX-dn-3L2" secondAttribute="trailing" id="xIC-C0-vVP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PbR-D7-IPt" secondAttribute="trailing" id="yZY-y5-cUb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="nvl-Ku-zkh" kind="show" id="y4Y-6C-bUA"/>
@@ -42,7 +74,7 @@
         <!--Add-->
         <scene sceneID="mcu-63-ybf">
             <objects>
-                <tableViewController id="nvl-Ku-zkh" sceneMemberID="viewController">
+                <tableViewController id="nvl-Ku-zkh" customClass="AddEditTableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="oid-7z-5P5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
