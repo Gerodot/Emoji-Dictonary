@@ -13,6 +13,7 @@
 		2DB519C6280378E900667D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C4280378E900667D77 /* Main.storyboard */; };
 		2DB519C8280378EE00667D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C7280378EE00667D77 /* Assets.xcassets */; };
 		2DB519CB280378EE00667D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB519C9280378EE00667D77 /* LaunchScreen.storyboard */; };
+		2DB519D428037A2A00667D77 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB519D328037A2A00667D77 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2DB519C7280378EE00667D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DB519CA280378EE00667D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DB519CC280378EE00667D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB519D328037A2A00667D77 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		2DB519BD280378E900667D77 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
+				2DB519D228037A1000667D77 /* Model */,
 				2DB519BE280378E900667D77 /* AppDelegate.swift */,
 				2DB519C0280378E900667D77 /* SceneDelegate.swift */,
 				2DB519C2280378E900667D77 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				2DB519CC280378EE00667D77 /* Info.plist */,
 			);
 			path = TableViews;
+			sourceTree = "<group>";
+		};
+		2DB519D228037A1000667D77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DB519D328037A2A00667D77 /* Emoji.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				2DB519C3280378E900667D77 /* ViewController.swift in Sources */,
 				2DB519BF280378E900667D77 /* AppDelegate.swift in Sources */,
+				2DB519D428037A2A00667D77 /* Emoji.swift in Sources */,
 				2DB519C1280378E900667D77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
