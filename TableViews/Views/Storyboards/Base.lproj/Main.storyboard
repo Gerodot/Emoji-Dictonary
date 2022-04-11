@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EmojiCell" rowHeight="88" id="cQn-cj-Dba">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EmojiCell" rowHeight="88" id="cQn-cj-Dba" customClass="EmojiCell" customModule="TableViews" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQn-cj-Dba" id="KGc-wa-w2I">
@@ -56,6 +56,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descrioptionLabel" destination="YGX-dn-3L2" id="6Af-bs-hd3"/>
+                                    <outlet property="nameLabel" destination="PbR-D7-IPt" id="arm-Fu-hZu"/>
+                                    <outlet property="symbol" destination="Kne-oS-4v5" id="BTv-Tt-Jd4"/>
                                     <segue destination="nvl-Ku-zkh" kind="show" id="y4Y-6C-bUA"/>
                                 </connections>
                             </tableViewCell>
