@@ -13,7 +13,9 @@ class AddEditTableViewController: UITableViewController {
     @IBOutlet weak var symbolTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var usageTextField: UITextField!
+    @IBOutlet weak var usageTextField: UITextView!
+    @IBOutlet weak var titleLabel: UINavigationItem!
+    
     
     //MARK: - Properites
     var emoji = Emoji()
@@ -30,6 +32,14 @@ class AddEditTableViewController: UITableViewController {
         nameTextField.text = emoji.name
         descriptionTextField.text = emoji.description
         usageTextField.text = emoji.usage
+        titleName()
+        
+    }
+    
+    func titleName() {
+        if emoji.symbol != "" && emoji.name != "" && emoji.description != "" && emoji.usage != "" {
+            titleLabel.title = "Edit Emoji"
+        }
     }
     
     func saveEmoji() {

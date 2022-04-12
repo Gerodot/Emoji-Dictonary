@@ -11,16 +11,16 @@
         <scene sceneID="iBX-eN-8th">
             <objects>
                 <tableViewController id="09o-w1-anP" customClass="EmojiTableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1bU-Th-FSX">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="1bU-Th-FSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EmojiCell" rowHeight="88" id="cQn-cj-Dba" customClass="EmojiCell" customModule="TableViews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
+                                <rect key="frame" x="20" y="32" width="374" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQn-cj-Dba" id="KGc-wa-w2I">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kne-oS-4v5">
@@ -30,13 +30,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-D7-IPt">
-                                            <rect key="frame" x="75" y="11" width="302.5" height="37.5"/>
+                                            <rect key="frame" x="75" y="11" width="262.5" height="37.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGX-dn-3L2">
-                                            <rect key="frame" x="75" y="56.5" width="302.5" height="20.5"/>
+                                            <rect key="frame" x="75" y="56.5" width="262.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -88,23 +88,22 @@
         <scene sceneID="mcu-63-ybf">
             <objects>
                 <tableViewController id="nvl-Ku-zkh" customClass="AddEditTableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="oid-7z-5P5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="oid-7z-5P5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Symbol" id="A3F-uf-PS5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XlT-JN-kMa">
-                                        <rect key="frame" x="0.0" y="32" width="414" height="41"/>
+                                        <rect key="frame" x="20" y="32" width="374" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XlT-JN-kMa" id="V3Y-bT-Ovo">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter emoji symbol" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OnL-dv-QR7">
-                                                    <rect key="frame" x="20" y="11" width="374" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="20" y="11" width="334" height="25"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -121,15 +120,15 @@
                             <tableViewSection headerTitle="Name" id="MSc-VP-HaR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6Ez-18-v52">
-                                        <rect key="frame" x="0.0" y="123" width="414" height="41"/>
+                                        <rect key="frame" x="20" y="129" width="374" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Ez-18-v52" id="g30-6o-4ZW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter emoji name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-WB-72N">
-                                                    <rect key="frame" x="20" y="11" width="374" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="20" y="11" width="334" height="25"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -146,15 +145,15 @@
                             <tableViewSection headerTitle="Descrioption" id="EFG-U1-yCf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IaB-L1-hag">
-                                        <rect key="frame" x="0.0" y="214" width="414" height="41"/>
+                                        <rect key="frame" x="20" y="226" width="374" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IaB-L1-hag" id="s8L-av-06X">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter emoji desctioption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eiz-Zh-F6K">
-                                                    <rect key="frame" x="20" y="11" width="374" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="20" y="11" width="334" height="25"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -170,24 +169,41 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Usage" id="7Ym-oV-ufV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hmb-k6-mcN">
-                                        <rect key="frame" x="0.0" y="305" width="414" height="41"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="292" id="Hmb-k6-mcN">
+                                        <rect key="frame" x="20" y="323" width="374" height="292"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hmb-k6-mcN" id="ABv-jY-3DR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter emoji usage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-X3-1LO">
-                                                    <rect key="frame" x="20" y="11" width="374" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-lz-rDd">
+                                                    <rect key="frame" x="20" y="11" width="334" height="270"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-GW-T5n">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="270"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="DDg-GW-T5n" firstAttribute="bottom" secondItem="JAw-zI-pPi" secondAttribute="bottom" id="Acb-gc-tir"/>
+                                                        <constraint firstItem="DDg-GW-T5n" firstAttribute="centerY" secondItem="pQe-lz-rDd" secondAttribute="centerY" id="cbL-nh-pwf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DDg-GW-T5n" secondAttribute="trailing" id="gVS-fk-MbG"/>
+                                                        <constraint firstItem="DDg-GW-T5n" firstAttribute="leading" secondItem="pQe-lz-rDd" secondAttribute="leading" id="m0C-AN-axB"/>
+                                                        <constraint firstItem="DDg-GW-T5n" firstAttribute="centerX" secondItem="pQe-lz-rDd" secondAttribute="centerX" id="nbc-ps-gEc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DDg-GW-T5n" secondAttribute="bottom" id="x1K-zB-RYo"/>
+                                                    </constraints>
+                                                    <viewLayoutGuide key="contentLayoutGuide" id="TBh-Aw-gB8"/>
+                                                    <viewLayoutGuide key="frameLayoutGuide" id="JAw-zI-pPi"/>
+                                                </scrollView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Nzb-X3-1LO" secondAttribute="bottom" id="Sm7-ee-dtz"/>
-                                                <constraint firstItem="Nzb-X3-1LO" firstAttribute="top" secondItem="ABv-jY-3DR" secondAttribute="topMargin" id="ZF4-ql-WWi"/>
-                                                <constraint firstItem="Nzb-X3-1LO" firstAttribute="leading" secondItem="ABv-jY-3DR" secondAttribute="leadingMargin" id="hw3-kw-Lxu"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Nzb-X3-1LO" secondAttribute="trailing" id="neU-kP-vf6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pQe-lz-rDd" secondAttribute="trailing" id="0WF-BD-l4Z"/>
+                                                <constraint firstItem="pQe-lz-rDd" firstAttribute="top" secondItem="ABv-jY-3DR" secondAttribute="topMargin" id="4C7-Ds-4Pp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pQe-lz-rDd" secondAttribute="bottom" id="85n-IO-rC6"/>
+                                                <constraint firstItem="pQe-lz-rDd" firstAttribute="leading" secondItem="ABv-jY-3DR" secondAttribute="leadingMargin" id="8M2-2P-baZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -215,13 +231,14 @@
                         <outlet property="descriptionTextField" destination="Eiz-Zh-F6K" id="RWG-oj-qqw"/>
                         <outlet property="nameTextField" destination="DSs-WB-72N" id="TfM-1a-QOB"/>
                         <outlet property="symbolTextField" destination="OnL-dv-QR7" id="pQZ-1u-uRp"/>
-                        <outlet property="usageTextField" destination="Nzb-X3-1LO" id="aDk-cc-CrL"/>
+                        <outlet property="titleLabel" destination="cit-89-Z7x" id="Aaa-Rn-hkw"/>
+                        <outlet property="usageTextField" destination="DDg-GW-T5n" id="rYw-yV-hCW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ms-JS-85K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="z9Z-Vy-JFK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="-105"/>
+            <point key="canvasLocation" x="1537.68115942029" y="-105.13392857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vlR-Qv-bTV">
@@ -246,6 +263,9 @@
         <segue reference="C09-HP-8mE"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
