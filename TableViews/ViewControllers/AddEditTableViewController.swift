@@ -38,7 +38,7 @@ class AddEditTableViewController: UITableViewController {
     
     func titleName() {
         if emoji.symbol != "" && emoji.name != "" && emoji.description != "" && emoji.usage != "" {
-            titleLabel.title = "Edit Emoji"
+            titleLabel.title = "Edit"
         }
     }
     
@@ -52,6 +52,5 @@ class AddEditTableViewController: UITableViewController {
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         saveEmoji()
-        print(#line,#function, segue.identifier ?? "nil")
     }
 }
