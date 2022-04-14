@@ -31,10 +31,6 @@ extension Emoji {
       ]
     }
     
-    static func loadAll () -> [Emoji]? {
-        return nil
-    }
-    
     static func loadDefault () -> [Emoji]? {
         return all
     }
