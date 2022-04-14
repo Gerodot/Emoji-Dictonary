@@ -5,7 +5,7 @@
 //  Created by Gerodot on 4/10/22.
 //
 
-struct Emoji {
+struct Emoji: Codable {
     var symbol: String
     var name: String
     var description: String
