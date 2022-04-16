@@ -179,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2DB519B6280378E900667D77 /* Build configuration list for PBXProject "TableViews" */;
+			buildConfigurationList = 2DB519B6280378E900667D77 /* Build configuration list for PBXProject "Emoji Dictonary" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -425,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DB519B6280378E900667D77 /* Build configuration list for PBXProject "TableViews" */ = {
+		2DB519B6280378E900667D77 /* Build configuration list for PBXProject "Emoji Dictonary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DB519CD280378EE00667D77 /* Debug */,
