@@ -220,7 +220,7 @@
                                 <segue destination="z9Z-Vy-JFK" kind="unwind" unwindAction="unwind:" id="SQy-Y1-wPq"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8Vu-2N-hBd">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="8Vu-2N-hBd">
                             <connections>
                                 <segue destination="z9Z-Vy-JFK" kind="unwind" identifier="saveSegue" unwindAction="unwind:" id="Yxx-7i-5ex"/>
                             </connections>
@@ -229,6 +229,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="Eiz-Zh-F6K" id="RWG-oj-qqw"/>
                         <outlet property="nameTextField" destination="DSs-WB-72N" id="TfM-1a-QOB"/>
+                        <outlet property="saveButton" destination="8Vu-2N-hBd" id="UXX-QP-tHC"/>
                         <outlet property="symbolTextField" destination="OnL-dv-QR7" id="pQZ-1u-uRp"/>
                         <outlet property="titleLabel" destination="cit-89-Z7x" id="Aaa-Rn-hkw"/>
                         <outlet property="usageTextField" destination="DDg-GW-T5n" id="rYw-yV-hCW"/>
