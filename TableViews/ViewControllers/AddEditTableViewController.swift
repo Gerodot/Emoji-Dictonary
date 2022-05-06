@@ -29,13 +29,11 @@ class AddEditTableViewController: UITableViewController {
     }
     
     //MARK: - Methods
-    
     func titleName() {
         if emoji.symbol != "" && emoji.name != "" && emoji.description != "" && emoji.usage != "" {
             titleLabel.title = "Edit"
         }
     }
-    
     
     func saveEmoji() {
         emoji.symbol = symbolTextField.text ?? ""
@@ -44,19 +42,19 @@ class AddEditTableViewController: UITableViewController {
         emoji.usage = usageTextField.text ?? ""
     }
     
+    func setupTextFields() {
+        symbolTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        nameTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        descriptionTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        //usageTextField.textFieldDidChange(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+    }
+    
     func updateUI() {
         symbolTextField.text = emoji.symbol
         nameTextField.text = emoji.name
         descriptionTextField.text = emoji.description
         usageTextField.text = emoji.usage
         titleName()
-    }
-    
-    func setupTextFields() {
-        symbolTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
-        nameTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
-        descriptionTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
-        //usageTextField.textFieldDidChange(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
     }
     
     //MARK: - Navigation

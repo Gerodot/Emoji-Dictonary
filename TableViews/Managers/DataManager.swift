@@ -21,6 +21,7 @@ class DataManager {
     }
     
     // MARK: - Methods
+    
     // JSON file data loader
     func loadEmojis () -> [Emoji]?{
         guard let archiveURL = archiveURL else {return nil}

@@ -24,10 +24,11 @@
 
 /* Begin PBXFileReference section */
 		2D4E75EF280384E600B00574 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		2D7ED7822825D48400899C4F /* Emoji Dictonary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emoji Dictonary.entitlements"; sourceTree = "<group>"; };
 		2DA807F62806C13D0069D8C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DA807F82806C14C0069D8C8 /* Screens */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screens; sourceTree = "<group>"; };
 		2DABF0342803941D007E1FEC /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
-		2DB519BB280378E900667D77 /* TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB519BB280378E900667D77 /* Emoji Dictonary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictonary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB519BE280378E900667D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DB519C0280378E900667D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2DB519C5280378E900667D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,16 +81,17 @@
 		2DB519B2280378E900667D77 = {
 			isa = PBXGroup;
 			children = (
+				2D7ED7822825D48400899C4F /* Emoji Dictonary.entitlements */,
 				2DA807F62806C13D0069D8C8 /* README.md */,
-				2DB519BC280378E900667D77 /* Products */,
 				2DB519BD280378E900667D77 /* TableViews */,
+				2DB519BC280378E900667D77 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		2DB519BC280378E900667D77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DB519BB280378E900667D77 /* TableViews.app */,
+				2DB519BB280378E900667D77 /* Emoji Dictonary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DB519BA280378E900667D77 /* TableViews */ = {
+		2DB519BA280378E900667D77 /* Emoji Dictonary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DB519CF280378EE00667D77 /* Build configuration list for PBXNativeTarget "TableViews" */;
+			buildConfigurationList = 2DB519CF280378EE00667D77 /* Build configuration list for PBXNativeTarget "Emoji Dictonary" */;
 			buildPhases = (
 				2DB519B7280378E900667D77 /* Sources */,
 				2DB519B8280378E900667D77 /* Frameworks */,
@@ -159,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = TableViews;
+			name = "Emoji Dictonary";
 			productName = TableViews;
-			productReference = 2DB519BB280378E900667D77 /* TableViews.app */;
+			productReference = 2DB519BB280378E900667D77 /* Emoji Dictonary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DB519BA280378E900667D77 /* TableViews */,
+				2DB519BA280378E900667D77 /* Emoji Dictonary */,
 			);
 		};
 /* End PBXProject section */
@@ -369,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictonary.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCNPSXVE8H;
@@ -387,6 +390,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gerasimof.TableViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictonary.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCNPSXVE8H;
@@ -416,6 +421,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gerasimof.TableViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DB519CF280378EE00667D77 /* Build configuration list for PBXNativeTarget "TableViews" */ = {
+		2DB519CF280378EE00667D77 /* Build configuration list for PBXNativeTarget "Emoji Dictonary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DB519D0280378EE00667D77 /* Debug */,

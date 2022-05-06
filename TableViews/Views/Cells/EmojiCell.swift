@@ -11,5 +11,4 @@ class EmojiCell: UITableViewCell {
     @IBOutlet weak var symbol: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descrioptionLabel: UILabel!
-    
 }
